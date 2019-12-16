@@ -1,0 +1,71 @@
+
+.Navbar{
+ 
+    background-color: #222;
+    overflow: hidden;
+  
+}
+
+.Navbar .NavbarLogo{
+
+  
+    margin: 15px;
+}
+
+
+.Navbar .NavbarLink  {
+
+float: right;
+display: block;
+color: #ececec;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+text-transform: capitalize;
+font-size: 17px;
+
+}
+
+.NavbarLink:hover{
+    color: #82b340;
+   
+}
+
+.Icon{
+    display: none;
+    color: white;
+    font-size: 35px;
+    margin: 5px;
+}
+
+/* .Icon:hover{
+    color: white;
+} */
+
+.active {
+    background-color: #82b340;
+}
+
+@media screen and (max-width: 600px) {
+    .NavbarLink:not(:first-child) {display: none;}
+    .Icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Navbar.responsive {position: relative;}
+    .Navbar.responsive .NavbarLink.Icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    } 
+
+
+.Navbar.responsive .NavbarLink {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
